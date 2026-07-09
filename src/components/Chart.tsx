@@ -17,6 +17,7 @@ export function Chart({ ...rest }: ChartProps) {
         hideRules
         hideDataPoints
         areaChart
+        curved
         startFillColor="rgba(33, 103, 255, 0.35)"
         endFillColor="rgba(5, 7, 14, 0)"
         startOpacity={1}
