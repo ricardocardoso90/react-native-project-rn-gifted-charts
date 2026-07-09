@@ -9,12 +9,22 @@ export function Chart({ ...rest }: ChartProps) {
     <View>
       <LineChart
         adjustToWidth
+        height={200}
         initialSpacing={0}
         endSpacing={0}
-        thickness1={5}
-        color1="#308AF8"
+        thickness={5}
+        color="#308AF8"
         hideRules
-        hideDataPoints1
+        hideDataPoints
+        areaChart
+        startFillColor="rgba(33, 103, 255, 0.35)"
+        endFillColor="rgba(5, 7, 14, 0)"
+        startOpacity={1}
+        endOpacity={0}
+        isAnimated
+        animationDuration={800}
+        animateOnDataChange
+        yAxisLabelWidth={0}
 
         {...rest}
       />

@@ -42,3 +42,7 @@ export const sampleData = {
     { value: 5200 },
   ],
 };
+
+export type PeriodRange = keyof typeof sampleData;
+
+export const periodRanges = Object.keys(sampleData) as PeriodRange[];
